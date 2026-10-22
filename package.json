@@ -1,0 +1,9 @@
+{
+  "name": "textile-sales-manager",
+  "version": "0.2.0",
+  "description": "Textile Sales Manager - internal sales-record tool for a textile shop",
+  "private": true,
+  "scripts": {
+    "test": "node --test"
+  }
+}

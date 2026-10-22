@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: textile-sales-manager
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: textile-sales-manager
+  template:
+    metadata:
+      labels:
+        app: textile-sales-manager
+    spec:
+      containers:
+        - name: web
+          image: your-dockerhub-username/textile-sales-manager:v1
+          ports:
+            - containerPort: 80
